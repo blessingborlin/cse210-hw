@@ -10,39 +10,35 @@ class Program
         int userNumber = -1;
         while (userNumber != 0)
         {
-            Console.Write("Enter a  list of numbers number (enter 0 to quit): ");
+            Console.Write("Please Enter a number ( Enter 0 to quit):  ");
             
             string userResponse = Console.ReadLine();
             userNumber = int.Parse(userResponse);
-            
+                        
             if (userNumber != 0)
             {
                 numbers.Add(userNumber);
             }
         }
-
+        
         int sum = 0;
         foreach (int number in numbers)
         {
             sum += number;
         }
-
-        Console.WriteLine($"The total sum is: {sum}");
-
-        
+        Console.WriteLine($"The total  sum is: {sum}");
         float average = ((float)sum) / numbers.Count;
         Console.WriteLine($"The  total average is: {average}");
-        
+
         int max = numbers[0];
 
         foreach (int number in numbers)
         {
-            if (number > max)
-            { 
+            if (max < number )
+            {
                 max = number;
             }
         }
-        
-        Console.WriteLine($"The total  max is: {max}");
+        Console.WriteLine($"The  total max is: {max}");
     }
 }
