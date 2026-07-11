@@ -22,18 +22,18 @@ class Program
             }
         }
 
-        // Part 1: Compute the sum
+
         int sum = 0;
         foreach (int number in numbers)
         {
             sum += number;
         }
 
-        Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The total sum is: {sum}");
 
         
         float average = ((float)sum) / numbers.Count;
-        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The  total average is: {average}");
 
         int max = numbers[0];
 
@@ -45,8 +45,10 @@ class Program
             }
         }
 
-        Console.WriteLine($"The max is: {max}");
+        Console.WriteLine($"The total max is: {max}");
     }
 }
         
+    
+
     
