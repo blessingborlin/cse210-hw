@@ -4,13 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your name? ");
-        string first = Console.ReadLine();
 
-        Console.Write("what is your topic? ");
-        string last= Console.ReadLine();
 
-        Console.WriteLine($" {first} - {last}");
-        
+        MathAssignment a2 = new MathAssignment("Roberto Rodriguez", "Fractions", "7.3", "8-19");
+        Console.WriteLine(a2.GetSummary());
+        Console.WriteLine(a2.GetHomeworkList());
+
+        WritingAssignment a3 = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
+        Console.WriteLine(a3.GetSummary());
+        Console.WriteLine(a3.GetWritingInformation());
     }
 }
