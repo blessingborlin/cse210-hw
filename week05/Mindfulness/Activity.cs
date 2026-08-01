@@ -22,7 +22,24 @@ public class Activity
         Console.WriteLine(_description);
     }
     
+    public void ShowSpinner(int seconds )
+    {
+        List <string> spinner = new List<string> {"|" ,"/", "-", "\\" };
+        DateTime endtime = DateTime.Now.AddSeconds(seconds);
 
+        while (DateTime.Now < endtime)
+        {
+            foreach (string symbol in spinner)
+            Console.Write(symbol);
+            Thread.Sleep(250);
+            Console.Write("\b \b");
+
+            if (DateTime.Now >= endTime)
+            {
+                break;
+            }
+        }
+    }
     
     
 
