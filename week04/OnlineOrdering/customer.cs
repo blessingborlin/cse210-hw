@@ -10,11 +10,21 @@ public class Customer
     }
 
     // Getters and Setters
-    public string GetName() { return _name; }
-    public void SetName(string name) { _name = name; }
+    public string GetName() 
+    { 
+        return _name; 
+    }
+    public void SetName(string name) 
+    { 
+        _name = name; 
+    }
 
-    public Address GetAddress() { return _address; }
-    public void SetAddress(Address address) { _address = address; }
+    public Address GetAddress() 
+    { return _address; }
+    public void SetAddress(Address address) 
+    {
+        _address = address; 
+    }
 
     // Method: call address method to check if in USA
     public bool LivesInUSA()

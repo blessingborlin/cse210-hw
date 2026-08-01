@@ -10,16 +10,20 @@ public class Activity
         _description= description;
         _duration=duration;
     }
+    public void DisplayStartingMessage()
+    {
+        Console.WriteLine($" Welcome to {_name}  Activity.");
+        Console.WriteLine(_description);
+    
+    }
+    public void DisplayEndingMessage()
+    {
+        Console.WriteLine($"Thanks for finishing {_name}  Activity.");
+        Console.WriteLine(_description);
+    }
+    
 
-    public string DisplayStartingMessage() 
-    {
-        Console.WriteLine(" You are about to take an Activity text so pleaserelax andtake your time to answer this questions. ") 
-    }
-    public string DisplayEndingMessage()
-    {
-        Console.WriteLine(" Congratulations,you are doing great.!!")
-        console.writeline("")
-    }
+    
     
 
 
