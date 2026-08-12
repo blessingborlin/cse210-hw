@@ -1,11 +1,10 @@
 using System.Diagnostics;
 
-public class Cycling:Activity
+public class Cycling : Activity
 {
     private double _speed;
 
-    public Cycling(DateTime date, int length, double speed)
-        : base(date, length)
+    public Cycling(DateTime date, int length, double speed) : base(date, length)
     {
         _speed = speed;
     }
@@ -26,7 +25,4 @@ public class Cycling:Activity
     {
         return "Cycling";
     }
-
-
-
 }
