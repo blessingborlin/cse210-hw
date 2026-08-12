@@ -11,10 +11,10 @@ class Program
         new DateTime (2022, 11, 3 ), 30, 3.0));
         
         activities.Add(new Cycling(
-        new DateTime( 2022, 11, 3 ), 45, 20));
+        new DateTime( 2022, 11, 3 ), 50, 20));
          
         activities.Add(new Swimming(
-        new DateTime( 2022, 11, 3), 40, 20));
+        new DateTime( 2022, 11, 3), 25, 10));
 
 
         foreach (Activity activity in activities)
