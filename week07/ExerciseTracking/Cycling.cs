@@ -1,28 +1,24 @@
-using System.Diagnostics;
-
 public class Cycling : Activity
 {
-    private double _speed;
-
-    public Cycling(DateTime date, int length, double speed) : base(date, length)
+    private double _Speed;
+     
+    public Cycling(DateTime date, double length, double Speed): base(date, length)
     {
-        _speed = speed;
+        _Speed = Speed;
     }
     public override double GetDistance()
     {
-        return _speed * GetLength() / 60;
+        return _Speed * _length / 60 ;
+    
     }
     public override double GetSpeed()
     {
-        return _speed;
+        return _Speed;
     }
     public override double GetPace()
     {
-      return 60/_speed;
-    
+        return 60 / _Speed;
     }
-    protected override string GetActivityName()
-    {
-        return "Cycling";
-    }
+
+
 }
