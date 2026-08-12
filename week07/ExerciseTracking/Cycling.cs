@@ -2,7 +2,7 @@ public class Cycling : Activity
 {
     private double _Speed;
      
-    public Cycling(DateTime date, double length, double Speed): base(date, length)
+    public Cycling(DateTime date, int length, double Speed): base(date, length)
     {
         _Speed = Speed;
     }
@@ -19,6 +19,9 @@ public class Cycling : Activity
     {
         return 60 / _Speed;
     }
-
+    public override string GetActivityName()
+    {
+        return "Cycling";
+    }
 
 }

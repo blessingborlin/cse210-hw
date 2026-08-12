@@ -1,9 +1,9 @@
 public abstract class Activity
 {
     private  DateTime  _date;
-    private  double _length;
+    protected  int _length;
 
-   public Activity(DateTime date, double length)
+   public Activity(DateTime date, int length)
     {
         _date = date;
         _length = length;
@@ -21,6 +21,6 @@ public abstract class Activity
         
     }
     
-    protected abstract string GetActivityName();
+    public abstract string GetActivityName();
 
 }

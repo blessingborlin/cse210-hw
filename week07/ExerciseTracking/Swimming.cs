@@ -3,7 +3,7 @@ public class Swimming : Activity
     private int _laps;
     private const double LapLength = 50 ;
 
-    public Swimming(DateTime date, double length, int laps): base(date , length)
+    public Swimming(DateTime date, int length, int laps): base(date , length)
     {
         _laps = laps;
     }
@@ -19,4 +19,9 @@ public class Swimming : Activity
     {
         return _length /GetDistance();
     }
+    public override string GetActivityName()
+    {
+        return "Swimming";
+    }
+    
 }

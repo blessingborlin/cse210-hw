@@ -2,7 +2,7 @@ public class Running : Activity
 {
     private double _distance;
 
-    public Running(DateTime date, double length, double distance): base(date,length)
+    public Running(DateTime date, int length, double distance): base(date,length)
     {
         _distance = distance;
     }
@@ -19,7 +19,10 @@ public class Running : Activity
     {
         return _length / _distance;
     }
-
-
+    public override string GetActivityName()
+    {
+        return "Running";
+    }
+     
 
 }
